@@ -233,7 +233,7 @@ Create a bean of the respective metric category. For example, say we need Guava 
 ```Java
 	@Bean
 	GuavaCacheMetrics guavaCacheMetrics() {
-		Return new GuavaCacheMetrics();
+		return new GuavaCacheMetrics();
 	}
 ```
 There are several metrics that are not enabled by default but can be bound in the above fashion. For a complete list, refer to [the official Micrometer GitHub repo](https://github.com/micrometer-metrics/micrometer/tree/master/micrometer-core/src/main/java/io/micrometer/core/instrument/binder ).
